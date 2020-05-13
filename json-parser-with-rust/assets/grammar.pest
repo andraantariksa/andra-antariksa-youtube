@@ -1,0 +1,21 @@
+integer = { ASCII_DIGIT+ }
+
+string = { "\"" ~ (!"\"" ~ ANY)* ~ "\"" }
+
+val = { string | integer | identfier }
+
+whitespace = { " " | "\t" }
+
+any_ex_nl = { (!"\n" ~ ANY) }
+
+def_str = { "#define" }
+
+define = { whitespace* ~ def_str ~ whitespace+ ~ identfier ~ whitespace+ ~ val }
+
+identfier = { ASCII_ALPHA ~ (ASCII_ALPHANUMERIC | "_")* }
+
+statement = { define | ((!identfier ~ any_ex_nl)* ~ identfier)+ ~ any_ex_nl* | any_ex_nl* }
+
+nl = { "\n" }
+
+main = { SOI ~ (statement ~ nl+)* ~ statement? ~ EOI }

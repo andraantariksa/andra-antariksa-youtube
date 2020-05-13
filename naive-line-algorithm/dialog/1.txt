@@ -1,0 +1,19 @@
+Halo temen-temen, jadi kali ini gw mau ngejelasin kalian bagaimana garis digambar di komputer dengan cara paling dasar atau naif.
+
+Jadi pada dasarnya monitor di komputer bisa dibilang terdiri dari lampu-lampu kecil. Nah lampu kecil ini bisa dibilang sebagai "pixel".
+
+Untuk pemetaan 2 dimensi, kita menyebut istilah sumbu sebagai
+
+Untuk menggambar garis di komputer, kita harus punya akses untuk mengubah warna pixel-pixel yang ada di monitor.
+
+Apa yang kita sebut garis itu seperti ini. Pixel-pixelnya harus bertetangga, tetangga itu bisa berada di kiri, kiri atas, atas, kanan atas, kanan, kanan bawah, bawah, kiri bawah.
+
+Macam-macam garis kita kelompokan dalam beberapa jenis
+
+Garis yang paling gampang digambar ya garis yang titik awalnya sama dengan titik akhirnya.
+
+Garis yang titik awalnya memiliki satu sumbu yang sama dengan titik akhinya.
+
+Garis yang titik awalnya memiliki perubahan posisi yang memiliki pola yang tetap.
+
+Untuk menggambar jenis garis lainnya, garis yang tidak memenuhi jenis-jenis garis sebelumnya, kita bisa menggunakan rumus garis yang pernah dipelajari di SMP.
